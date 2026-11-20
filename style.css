@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #202124;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  margin-bottom: 12px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #d9dee8;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.controls {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.controls label {
+  font-weight: 600;
+}
+
+.controls input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #b9c0cf;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2f6fed;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #245ac2;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.list {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.user-card,
+.post-card {
+  background: #fff;
+  border: 1px solid #d9dee8;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.user-card h3,
+.post-card h3 {
+  margin: 0 0 8px;
+}
+
+.user-card p,
+.post-card p {
+  margin: 6px 0;
+  line-height: 1.45;
+}
+
+.user-card button {
+  margin-top: 10px;
+}
+
+.status {
+  min-height: 22px;
+  margin: 10px 0 0;
+  font-weight: 600;
+}
+
+.status.success {
+  color: #1d7f3f;
+}
+
+.status.error {
+  color: #c62828;
+}
+
+.message {
+  margin: 0;
+  padding: 12px;
+  border-radius: 10px;
+  background: #eef2ff;
+  border: 1px solid #c9d7ff;
+}
+
+.message.error {
+  background: #fff2f2;
+  border-color: #f1bcbc;
+  color: #b42323;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Справочник пользователей</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Справочник пользователей</h1>
+
+    <section class="controls card">
+      <button id="load-users-btn" type="button">Загрузить пользователей</button>
+
+      <label for="search-input">Поиск по имени</label>
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Например, Leanne"
+        autocomplete="off"
+      >
+
+      <p id="status" class="status" aria-live="polite"></p>
+    </section>
+
+    <section>
+      <h2>Пользователи</h2>
+      <div id="user-list" class="list" aria-live="polite"></div>
+    </section>
+
+    <section>
+      <h2>Публикации пользователя</h2>
+      <p id="posts-status" class="status" aria-live="polite"></p>
+      <div id="posts-list" class="list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
